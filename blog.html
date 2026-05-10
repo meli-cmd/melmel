@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+    <title>Blog & Berita | Sekolah Modern Berprestasi</title>
+    <meta name="description" content="Kumpulan artikel, berita kegiatan, dan informasi terbaru seputar pendidikan dan kegiatan siswa di SekolahKu.">
+    <meta name="keywords" content="berita sekolah, blog pendidikan, artikel sekolah, kegiatan siswa">
+    <meta name="author" content="SekolahKu">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#800000">
+    <link rel="canonical" href="https://www.domainanda.com/blog.html">
+    
+    <meta property="og:title" content="Blog & Berita Terkini SekolahKu">
+    <meta property="og:description" content="Ikuti terus update kegiatan dan artikel menarik seputar dunia pendidikan dari kami.">
+    <meta property="og:image" content="assets/images/manual/group_discussion.jpg">
+    <meta property="og:url" content="https://www.domainanda.com/blog.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="SekolahKu">
+    <meta property="og:locale" content="id_ID">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Blog & Berita Terkini SekolahKu">
+    <meta name="twitter:description" content="Ikuti update kegiatan, artikel pendidikan, dan informasi sekolah terbaru dari SekolahKu.">
+    <meta name="twitter:image" content="assets/images/manual/group_discussion.jpg">
+
+    <link rel="icon" type="image/webp" href="assets/images/favicon.webp">
+    <link rel="shortcut icon" href="assets/images/favicon.webp">
+    <link rel="apple-touch-icon" href="assets/images/favicon.webp">
+
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        html, body { overflow-x: hidden; width: 100%; margin: 0; padding: 0; font-family: 'Poppins', sans-serif; }
+        :root { --maroon: #800000; --maroon-light: #A52A2A; --maroon-dark: #4A0000; }
+        .bg-maroon { background-color: var(--maroon) !important; color: white; }
+        .text-maroon { color: var(--maroon) !important; }
+        .btn-maroon { background-color: var(--maroon); color: white; border-radius: 25px; padding: 10px 24px; font-weight: 600; border: 2px solid var(--maroon); transition: all 0.3s ease; }
+        .btn-maroon:hover { background-color: white; color: var(--maroon); }
+        .navbar { box-shadow: 0 2px 10px rgba(0,0,0,0.1); padding: 0.85rem 0; }
+        .navbar-brand { font-size: 2rem !important; line-height: 1; letter-spacing: -0.03em; }
+        .nav-link { font-weight: 600; color: #333; font-size: 1.1rem; padding: 0.5rem 0.95rem !important; transition: color 0.3s; }
+        .nav-link:hover, .nav-link.active { color: var(--maroon) !important; }
+        .navbar .btn-maroon { min-width: 210px; padding: 0.9rem 1.8rem; text-align: center; }
+        
+        .floating-container { position: fixed; bottom: 20px; right: 20px; display: flex; flex-direction: column; gap: 15px; z-index: 9999; }
+        .float-btn { width: 55px; height: 55px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 24px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); transition: all 0.3s ease; text-decoration: none; }
+        .float-btn:hover { transform: translateY(-5px); color: white; }
+        .wa-btn { background-color: #25D366; }
+        .top-btn { background-color: var(--maroon); opacity: 0; visibility: hidden; cursor: pointer; border: none; }
+        .top-btn.show { opacity: 1; visibility: visible; }
+        
+        /* Card Blog Styling */
+        .card-blog { transition: 0.3s; border: none; border-radius: 12px; overflow: hidden; }
+        .card-blog:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important; }
+        .card-img-top { height: 200px; object-fit: cover; }
+        .featured-story img { width: 100%; height: 100%; min-height: 360px; object-fit: cover; border-radius: 18px; }
+        .sidebar-card { border: none; border-radius: 18px; box-shadow: 0 8px 24px rgba(0,0,0,0.08); padding: 1.5rem; height: 100%; }
+        .page-header { background: linear-gradient(to right, #fff5f5, #ffffff); }
+        .footer-brand { font-size: 2rem; line-height: 1.1; }
+        .footer-text { color: rgba(255,255,255,0.72); }
+        .footer-link { color: rgba(255,255,255,0.72); text-decoration: none; transition: color 0.3s ease, transform 0.3s ease; }
+        .footer-link:hover { color: #ffffff; transform: translateX(3px); }
+        .footer-contact li, .footer-social a { color: rgba(255,255,255,0.72); }
+        .footer-social a { font-size: 1.15rem; margin-right: 1rem; transition: color 0.3s ease, transform 0.3s ease; }
+        .footer-social a:hover { color: #ffffff; transform: translateY(-2px); }
+        
+        @media (max-width: 767.98px) {
+            .footer-social a { margin-right: 0; }
+            .footer-link:hover { transform: none; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+        <div class="container">
+            <a class="navbar-brand text-maroon fw-bold fs-3" href="index.html">Sekolah<span class="text-dark">Ku</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">Tentang Kami</a></li>
+                    <li class="nav-item"><a class="nav-link" href="akademik.html">Akademik</a></li>
+                    <li class="nav-item"><a class="nav-link" href="kegiatan.html">Kegiatan</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="hubungi.html">Hubungi Kami</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="py-5 page-header text-center">
+            <div class="container">
+                <h1 class="display-5 fw-bold text-maroon">Berita & Artikel</h1>
+                <p class="lead text-muted">Dapatkan informasi terbaru mengenai kegiatan sekolah dan wawasan pendidikan.</p>
+            </div>
+        </section>
+
+        <section class="py-5">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card card-blog shadow-sm h-100">
+                            <img src="images/olimpiadesains_11zon.webp" class="card-img-top" alt="Suasana belajar siswa di kelas" loading="lazy">
+                            <div class="card-body d-flex flex-column">
+                                <span class="badge bg-maroon mb-2" style="width: fit-content;">Prestasi</span>
+                                <h5 class="card-title fw-bold">Siswa Kami Meraih Emas di Olimpiade Sains Nasional</h5>
+                                <p class="card-text text-muted small flex-grow-1">Prestasi membanggakan kembali ditorehkan oleh siswa-siswi kita di kancah nasional dalam bidang sains terapan...</p>
+                                <a href="siswa-kami-meraih-emas-di-olimpiade-sains-nasional.html" class="text-maroon fw-bold text-decoration-none mt-3">Baca Selengkapnya <i class="fas fa-arrow-right ms-1"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card card-blog shadow-sm h-100">
+                            <img src="images/ekstrakulikuler_11zon.webp" class="card-img-top" alt="Kegiatan ekstrakurikuler seni siswa" loading="lazy">
+                            <div class="card-body d-flex flex-column">
+                                <span class="badge bg-maroon mb-2" style="width: fit-content;">Kegiatan</span>
+                                <h5 class="card-title fw-bold">Pentingnya Ekstrakurikuler untuk Karakter Anak</h5>
+                                <p class="card-text text-muted small flex-grow-1">Pendidikan tidak hanya terjadi di dalam kelas. Berikut adalah mengapa kegiatan luar kelas sangat vital untuk anak...</p>
+                                <a href="pentingnya-ekstrakurikuler-untuk-karakter-anak.html" class="text-maroon fw-bold text-decoration-none mt-3">Baca Selengkapnya <i class="fas fa-arrow-right ms-1"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card card-blog shadow-sm h-100">
+                            <img src="images/sekul1_11zon.webp" class="card-img-top" alt="Lingkungan sekolah yang nyaman untuk siswa" loading="lazy">
+                            <div class="card-body d-flex flex-column">
+                                <span class="badge bg-maroon mb-2" style="width: fit-content;">Informasi</span>
+                                <h5 class="card-title fw-bold">Persiapan PPDB Tahun Ajaran Baru 2024/2025</h5>
+                                <p class="card-text text-muted small flex-grow-1">Penerimaan Peserta Didik Baru segera dibuka. Catat tanggal penting dan persyaratan yang harus dipersiapkan...</p>
+                                <a href="persiapan-ppdb-tahun-ajaran-baru-2024-2025.html" class="text-maroon fw-bold text-decoration-none mt-3">Baca Selengkapnya <i class="fas fa-arrow-right ms-1"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card card-blog shadow-sm h-100">
+                            <img src="images/literasi_11zon.webp" class="card-img-top" alt="Siswa membaca buku di pagi hari" loading="lazy">
+                            <div class="card-body d-flex flex-column">
+                                <span class="badge bg-maroon mb-2" style="width: fit-content;">Akademik</span>
+                                <h5 class="card-title fw-bold">Manfaat Literasi Pagi untuk Kebiasaan Belajar Siswa</h5>
+                                <p class="card-text text-muted small flex-grow-1">Kebiasaan membaca singkat sebelum pelajaran dimulai membantu siswa lebih fokus, tenang, dan siap belajar...</p>
+                                <a href="manfaat-literasi-pagi-untuk-kebiasaan-belajar-siswa.html" class="text-maroon fw-bold text-decoration-none mt-3">Baca Selengkapnya <i class="fas fa-arrow-right ms-1"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card card-blog shadow-sm h-100">
+                            <img src="images/proyek_11zon.webp" class="card-img-top" alt="Siswa berdiskusi dalam kelompok" loading="lazy">
+                            <div class="card-body d-flex flex-column">
+                                <span class="badge bg-maroon mb-2" style="width: fit-content;">Pembelajaran</span>
+                                <h5 class="card-title fw-bold">Pembelajaran Berbasis Proyek Membuat Siswa Lebih Aktif</h5>
+                                <p class="card-text text-muted small flex-grow-1">Saat siswa terlibat menyusun ide, berdiskusi, dan mempresentasikan hasilnya, belajar terasa lebih bermakna...</p>
+                                <a href="pembelajaran-berbasis-proyek-membuat-siswa-lebih-aktif.html" class="text-maroon fw-bold text-decoration-none mt-3">Baca Selengkapnya <i class="fas fa-arrow-right ms-1"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card card-blog shadow-sm h-100">
+                            <img src="images/sains_11zon.webp" class="card-img-top" alt="Praktik sains di sekolah" loading="lazy">
+                            <div class="card-body d-flex flex-column">
+                                <span class="badge bg-maroon mb-2" style="width: fit-content;">Sains</span>
+                                <h5 class="card-title fw-bold">Peran Laboratorium Sains dalam Menumbuhkan Rasa Ingin Tahu</h5>
+                                <p class="card-text text-muted small flex-grow-1">Praktik langsung di laboratorium membuat konsep sains lebih mudah dipahami sekaligus memantik rasa ingin tahu...</p>
+                                <a href="peran-laboratorium-sains-dalam-menumbuhkan-rasa-ingin-tahu.html" class="text-maroon fw-bold text-decoration-none mt-3">Baca Selengkapnya <i class="fas fa-arrow-right ms-1"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card card-blog shadow-sm h-100">
+                            <img src="images/senitari_11zon.webp" class="card-img-top" alt="Kegiatan musik di sekolah" loading="lazy">
+                            <div class="card-body d-flex flex-column">
+                                <span class="badge bg-maroon mb-2" style="width: fit-content;">Seni</span>
+                                <h5 class="card-title fw-bold">Kegiatan Musik Sekolah Melatih Percaya Diri dan Disiplin</h5>
+                                <p class="card-text text-muted small flex-grow-1">Latihan musik mengajarkan konsistensi, kepekaan, dan keberanian tampil di depan banyak orang...</p>
+                                <a href="kegiatan-musik-sekolah-melatih-percaya-diri-dan-disiplin.html" class="text-maroon fw-bold text-decoration-none mt-3">Baca Selengkapnya <i class="fas fa-arrow-right ms-1"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card card-blog shadow-sm h-100">
+                            <img src="images/mengajar1_11zon.webp" class="card-img-top" alt="Siswa belajar komputer" loading="lazy">
+                            <div class="card-body d-flex flex-column">
+                                <span class="badge bg-maroon mb-2" style="width: fit-content;">Teknologi</span>
+                                <h5 class="card-title fw-bold">Kelas Komputer Membantu Siswa Siap Menghadapi Era Digital</h5>
+                                <p class="card-text text-muted small flex-grow-1">Literasi digital yang diajarkan sejak dini membantu siswa lebih siap beradaptasi dengan kebutuhan masa depan...</p>
+                                <a href="kelas-komputer-membantu-siswa-siap-menghadapi-era-digital.html" class="text-maroon fw-bold text-decoration-none mt-3">Baca Selengkapnya <i class="fas fa-arrow-right ms-1"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card card-blog shadow-sm h-100">
+                            <img src="images/perpustakaan_11zon.webp" alt="Perpustakaan sekolah modern" class="card-img-top" loading="lazy">
+                            <div class="card-body d-flex flex-column">
+                                <span class="badge bg-maroon mb-2" style="width: fit-content;">Literasi</span>
+                                <h5 class="card-title fw-bold">Pentingnya Perpustakaan Sekolah sebagai Ruang Belajar Nyaman</h5>
+                                <p class="card-text text-muted small flex-grow-1">Perpustakaan yang hidup bukan hanya tempat meminjam buku, tetapi pusat belajar yang tenang dan inspiratif...</p>
+                                <a href="pentingnya-perpustakaan-sekolah-sebagai-ruang-belajar-nyaman.html" class="text-maroon fw-bold text-decoration-none mt-3">Baca Selengkapnya <i class="fas fa-arrow-right ms-1"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card card-blog shadow-sm h-100">
+                            <img src="images/belajardiluar_11zon.webp" class="card-img-top" alt="Belajar luar kelas bersama siswa" loading="lazy">
+                            <div class="card-body d-flex flex-column">
+                                <span class="badge bg-maroon mb-2" style="width: fit-content;">Aktivitas</span>
+                                <h5 class="card-title fw-bold">Belajar di Luar Kelas Membuat Siswa Lebih Antusias</h5>
+                                <p class="card-text text-muted small flex-grow-1">Suasana belajar yang berganti membantu siswa tetap fokus, aktif bertanya, dan terlibat lebih alami dalam prosesnya...</p>
+                                <a href="belajar-di-luar-kelas-membuat-siswa-lebih-antusias.html" class="text-maroon fw-bold text-decoration-none mt-3">Baca Selengkapnya <i class="fas fa-arrow-right ms-1"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card card-blog shadow-sm h-100">
+                            <img src="images/siswa2_11zon.webp" class="card-img-top" alt="Kegiatan sosial siswa" loading="lazy">
+                            <div class="card-body d-flex flex-column">
+                                <span class="badge bg-maroon mb-2" style="width: fit-content;">Karakter</span>
+                                <h5 class="card-title fw-bold">Kegiatan Sosial Sekolah Menumbuhkan Kepedulian Sejak Dini</h5>
+                                <p class="card-text text-muted small flex-grow-1">Program sosial mengajak siswa memahami empati, tanggung jawab, dan pentingnya berbagi dalam kehidupan nyata...</p>
+                                <a href="kegiatan-sosial-sekolah-menumbuhkan-kepedulian-sejak-dini.html" class="text-maroon fw-bold text-decoration-none mt-3">Baca Selengkapnya <i class="fas fa-arrow-right ms-1"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card card-blog shadow-sm h-100">
+                            <img src="images/upacara1_11zon.webp" class="card-img-top" alt="Kegiatan upacara sekolah" loading="lazy">
+                            <div class="card-body d-flex flex-column">
+                                <span class="badge bg-maroon mb-2" style="width: fit-content;">Disiplin</span>
+                                <h5 class="card-title fw-bold">Upacara dan Olahraga Pagi Melatih Disiplin Siswa</h5>
+                                <p class="card-text text-muted small flex-grow-1">Rutinitas pagi yang terarah membantu siswa membangun kebiasaan tepat waktu, tertib, dan siap menjalani hari...</p>
+                                <a href="upacara-dan-olahraga-pagi-melatih-disiplin-siswa.html" class="text-maroon fw-bold text-decoration-none mt-3">Baca Selengkapnya <i class="fas fa-arrow-right ms-1"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <section class="py-5 bg-maroon text-center">
+        <div class="container">
+            <h2 class="fw-bold mb-3">Siap Mengukir Prestasi Bersama Kami?</h2>
+            <p class="mb-4 text-light">Jangan lewatkan kesempatan emas ini. Kuota pendaftaran terbatas!</p>
+            <a href="hubungi.html" class="btn btn-light text-maroon btn-lg rounded-pill px-5 fw-bold shadow">Hubungi Kami Sekarang</a>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-light pt-5 pb-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4 text-center text-md-start">
+                    <h4 class="text-white fw-bold mb-3 footer-brand">Sekolah<span class="text-maroon">Ku</span></h4>
+                    <p class="footer-text mb-0">Berdedikasi untuk menciptakan lingkungan belajar yang inspiratif, inklusif, dan berorientasi pada masa depan bagi setiap anak.</p>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4 text-center">
+                    <h5 class="text-white fw-bold mb-3">Tautan Cepat</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li><a href="about.html" class="footer-link d-inline-block mb-2">Tentang Kami</a></li>
+                        <li><a href="akademik.html" class="footer-link d-inline-block mb-2">Akademik & Kurikulum</a></li>
+                        <li><a href="kegiatan.html" class="footer-link d-inline-block mb-2">Galeri Kegiatan</a></li>
+                        <li><a href="blog.html" class="footer-link d-inline-block">Blog & Berita</a></li>
+                    </ul>
+                </div>
+                
+                <div id="kontak" class="col-lg-4 col-md-12 mb-4 text-center text-md-start">
+                    <h5 class="text-white fw-bold mb-3">Hubungi Kami</h5>
+                    <div class="d-inline-block text-start">
+                        <ul class="list-unstyled footer-contact mb-3">
+                            <li class="mb-2"><i class="fas fa-map-marker-alt text-center me-2" style="width: 20px;"></i> Jl. Pendidikan No. 123, Jakarta</li>
+                            <li class="mb-2"><i class="fas fa-phone-alt text-center me-2" style="width: 20px;"></i> +62 812 3456 7890</li>
+                            <li class="mb-2"><i class="fas fa-envelope text-center me-2" style="width: 20px;"></i> info@sekolahku.sch.id</li>
+                        </ul>
+                    </div>
+                    <div class="footer-social mt-3 d-flex justify-content-center justify-content-md-start gap-3">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="border-secondary mt-4">
+            <div class="text-center footer-text small">&copy; 2026 SekolahKu. All Rights Reserved.</div>
+        </div>
+    </footer>
+
+    <div class="floating-container">
+        <button id="backToTop" class="float-btn top-btn" title="Kembali ke Atas"><i class="fas fa-chevron-up"></i></button>
+        <a href="https://wa.me/6281234567890" target="_blank" class="float-btn wa-btn" title="Hubungi via WhatsApp"><i class="fab fa-whatsapp"></i></a>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const topBtn = document.getElementById("backToTop");
+            window.addEventListener("scroll", function() {
+                if (window.scrollY > 200) { topBtn.classList.add("show"); } else { topBtn.classList.remove("show"); }
+            });
+            topBtn.addEventListener("click", function(e) {
+                e.preventDefault();
+                window.scrollTo({ top: 0, behavior: "smooth" });
+            });
+        });
+    </script>
+</body>
+</html>

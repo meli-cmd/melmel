@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Akademik & Kurikulum | SekolahKu</title>
+    <meta name="description" content="Pelajari program akademik, kurikulum, pendekatan belajar, dan jenjang pendidikan unggulan di SekolahKu.">
+    <meta name="keywords" content="akademik sekolah, kurikulum sekolah, program belajar, TK PAUD, SD, SMP">
+    <meta name="author" content="SekolahKu">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#800000">
+    <link rel="canonical" href="https://www.domainanda.com/akademik.html">
+    <meta property="og:title" content="Akademik & Kurikulum | SekolahKu">
+    <meta property="og:description" content="Program akademik terstruktur, kurikulum modern, dan pendampingan belajar yang dirancang untuk perkembangan siswa.">
+    <meta property="og:image" content="assets/images/realistic/classroom-lesson.jpg">
+    <meta property="og:url" content="https://www.domainanda.com/akademik.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="SekolahKu">
+    <meta property="og:locale" content="id_ID">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Akademik & Kurikulum | SekolahKu">
+    <meta name="twitter:description" content="Program belajar aktif, kurikulum unggulan, dan jenjang pendidikan lengkap di SekolahKu.">
+    <meta name="twitter:image" content="assets/images/realistic/classroom-lesson.jpg">
+    <link rel="icon" type="image/webp" href="assets/images/favicon.webp">
+    <link rel="shortcut icon" href="assets/images/favicon.webp">
+    <link rel="apple-touch-icon" href="assets/images/favicon.webp">
+    
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "name": "Akademik & Kurikulum SekolahKu",
+      "description": "Informasi program akademik, pendekatan belajar, dan jenjang pendidikan di SekolahKu.",
+      "mainEntity": {
+        "@type": "EducationalOrganization",
+        "name": "SekolahKu",
+        "educationalCredentialAwarded": "Program Pendidikan Dasar dan Menengah"
+      }
+    }
+    </script>
+
+    <style>
+        html, body { overflow-x: hidden; width: 100%; font-family: 'Poppins', sans-serif; margin: 0; padding: 0; }
+        :root { --maroon: #800000; --maroon-light: #a52a2a; --maroon-dark: #4d0000; }
+        .text-maroon { color: var(--maroon) !important; }
+        .bg-maroon { background-color: var(--maroon) !important; color: white; }
+        
+        .btn-maroon { background-color: var(--maroon); color: white; border-radius: 25px; padding: 10px 24px; font-weight: 600; transition: all 0.3s ease; }
+        .btn-maroon:hover { background-color: var(--maroon-dark); color: white; }
+        
+        .navbar { box-shadow: 0 2px 10px rgba(0,0,0,0.1); padding: 0.85rem 0; }
+        .navbar-brand { font-size: 2rem !important; line-height: 1; letter-spacing: -0.03em; }
+        .nav-link { font-weight: 600; color: #333; font-size: 1.1rem; padding: 0.5rem 0.95rem !important; transition: color 0.3s; }
+        .nav-link:hover, .nav-link.active { color: var(--maroon) !important; }
+        .navbar .btn-maroon { min-width: 210px; padding: 0.9rem 1.8rem; text-align: center; }
+        
+        /* Floating Buttons */
+        .floating-container { position: fixed; bottom: 20px; right: 20px; display: flex; flex-direction: column; gap: 15px; z-index: 1000; }
+        .float-btn { width: 55px; height: 55px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 24px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); transition: all 0.3s; text-decoration: none; cursor: pointer; }
+        .float-btn:hover { transform: scale(1.1); color: white; }
+        .wa-btn { background-color: #25D366; }
+        .top-btn { background-color: var(--maroon); display: none; border: none; }
+        
+        .section-padding { padding: 80px 0; }
+        /* Ditambahkan overflow: hidden agar sudut gambar terpotong rapi mengikuti border-radius kartu */
+        .card-custom { border: none; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.08); transition: 0.3s; overflow: hidden; }
+        .card-custom:hover { transform: translateY(-5px); }
+        .icon-box { width: 60px; height: 60px; background-color: #fff5f5; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 24px; color: var(--maroon); margin-bottom: 20px; }
+        
+        /* REVISI CSS GAMBAR: Memastikan semua gambar utama memiliki rasio seragam */
+        .img-fluid { width: 100%; aspect-ratio: 4/3; max-height: 380px; object-fit: cover; border-radius: 12px; }
+        
+        /* Border-radius dan margin dihapus agar mentok */
+        .program-image { width: 100%; height: 200px; object-fit: cover; border-radius: 0; margin-bottom: 0; }
+        .feature-box { border: none; border-radius: 18px; box-shadow: 0 8px 24px rgba(0,0,0,0.08); padding: 2rem; height: 100%; background: #fff; }
+        .page-header { background: linear-gradient(to right, #fff5f5, #ffffff); }
+        .footer-brand { font-size: 2rem; line-height: 1.1; }
+        .footer-text { color: rgba(255,255,255,0.72); }
+        .footer-link { color: rgba(255,255,255,0.72); text-decoration: none; transition: color 0.3s ease, transform 0.3s ease; }
+        .footer-link:hover { color: #ffffff; transform: translateX(3px); }
+        .footer-contact li, .footer-social a { color: rgba(255,255,255,0.72); }
+        .footer-social a { font-size: 1.15rem; margin-right: 1rem; transition: color 0.3s ease, transform 0.3s ease; }
+        .footer-social a:hover { color: #ffffff; transform: translateY(-2px); }
+        
+        @media (max-width: 767.98px) {
+            .footer-social a { margin-right: 0; }
+            .footer-link:hover { transform: none; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+        <div class="container">
+            <a class="navbar-brand text-maroon fw-bold fs-3" href="index.html">Sekolah<span class="text-dark">Ku</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">Tentang Kami</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="akademik.html">Akademik</a></li>
+                    <li class="nav-item"><a class="nav-link" href="kegiatan.html">Kegiatan</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="hubungi.html">Hubungi Kami</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="py-5 page-header text-center">
+        <div class="container">
+            <h1 class="display-5 fw-bold text-maroon">Akademik & Kurikulum</h1>
+            <p class="lead text-muted">Membangun fondasi ilmu pengetahuan dan karakter yang kokoh untuk masa depan.</p>
+        </div>
+    </section>
+
+    <section class="section-padding bg-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h2 class="fw-bold text-maroon mb-4">Sistem Pembelajaran Kami</h2>
+                    <p class="text-muted mb-4">Kami menerapkan kurikulum nasional yang dipadukan dengan standar internasional dan pendidikan karakter. Pembelajaran berpusat pada siswa (student-centered learning) untuk mendorong kemampuan berpikir kritis, kolaborasi, dan kreativitas.</p>
+                    <div class="row g-4">
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="fas fa-check-circle text-maroon fs-4 me-3"></i>
+                                <span class="fw-semibold">Bilingual Program</span>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-check-circle text-maroon fs-4 me-3"></i>
+                                <span class="fw-semibold">Project-Based Learning</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="fas fa-check-circle text-maroon fs-4 me-3"></i>
+                                <span class="fw-semibold">Pendidikan Karakter</span>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-check-circle text-maroon fs-4 me-3"></i>
+                                <span class="fw-semibold">Digital Literacy</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="images/mengajar1_11zon.webp" alt="Guru mengajar di kelas" class="img-fluid shadow" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="text-maroon fw-bold">Jenjang Pendidikan</h2>
+                <p class="text-muted">Fokus pembelajaran yang disesuaikan dengan tahap perkembangan anak.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card card-custom h-100">
+                        <img src="images/siswa1_11zon.webp" alt="Program TK dan PAUD" class="program-image" loading="lazy">
+                        <div class="p-4">
+                            <h4 class="fw-bold text-maroon">TK & PAUD</h4>
+                            <p class="text-muted small">Pembelajaran berbasis bermain (play-based learning). Fokus pada motorik halus, motorik kasar, pengenalan huruf, angka, dan kemandirian sosial anak usia dini.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card card-custom h-100">
+                        <img src="images/komputer_11zon.webp" alt="Program Sekolah Dasar" class="program-image" loading="lazy">
+                        <div class="p-4">
+                            <h4 class="fw-bold text-maroon">Sekolah Dasar (SD)</h4>
+                            <p class="text-muted small">Membangun literasi, numerasi, dan akhlak mulia. Dilengkapi dengan pengenalan teknologi dasar dan bahasa Inggris untuk membekali siswa menuju jenjang menengah.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card card-custom h-100">
+                        <img src="images/olimpiadesains_11zon.webp" alt="Program Sekolah Menengah" class="program-image" loading="lazy">
+                        <div class="p-4">
+                            <h4 class="fw-bold text-maroon">Sekolah Menengah (SMP)</h4>
+                            <p class="text-muted small">Pengembangan minat dan bakat, berpikir analitis, serta persiapan akademik lanjutan. Ditambah dengan program kepemimpinan (leadership) dan entrepreneurship.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding bg-white">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="feature-box">
+                        <h3 class="fw-bold text-maroon mb-3">Pendekatan Belajar</h3>
+                        <p class="text-muted">Kami menyusun pembelajaran berbasis proyek, diskusi aktif, dan praktik nyata agar siswa tidak hanya memahami teori, tetapi juga mampu menerapkannya dalam kehidupan sehari-hari.</p>
+                        <ul class="list-unstyled text-muted mb-0">
+                            <li class="mb-2"><i class="fas fa-check-circle text-maroon me-2"></i> Pembelajaran kolaboratif</li>
+                            <li class="mb-2"><i class="fas fa-check-circle text-maroon me-2"></i> Evaluasi bertahap dan personal</li>
+                            <li><i class="fas fa-check-circle text-maroon me-2"></i> Penguatan karakter di setiap jenjang</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="feature-box">
+                        <h3 class="fw-bold text-maroon mb-3">Mata Pelajaran Unggulan</h3>
+                        <p class="text-muted">Selain pelajaran inti, siswa mendapat pengalaman belajar tambahan yang menyiapkan mereka untuk tantangan masa depan dan perkembangan teknologi.</p>
+                        <ul class="list-unstyled text-muted mb-0">
+                            <li class="mb-2"><i class="fas fa-star text-maroon me-2"></i> Bahasa Inggris aktif</li>
+                            <li class="mb-2"><i class="fas fa-star text-maroon me-2"></i> Sains eksperimen</li>
+                            <li><i class="fas fa-star text-maroon me-2"></i> Literasi digital dan presentasi</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="feature-box">
+                        <h3 class="fw-bold text-maroon mb-3">Pendampingan Siswa</h3>
+                        <p class="text-muted">Guru dan wali kelas bekerja sama memantau perkembangan siswa melalui laporan rutin, konsultasi orang tua, dan penguatan minat bakat secara terarah.</p>
+                        <ul class="list-unstyled text-muted mb-0">
+                            <li class="mb-2"><i class="fas fa-users text-maroon me-2"></i> Komunikasi rutin dengan orang tua</li>
+                            <li class="mb-2"><i class="fas fa-users text-maroon me-2"></i> Kelas pengayaan dan remedial</li>
+                            <li><i class="fas fa-users text-maroon me-2"></i> Bimbingan minat dan bakat</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding bg-light">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <img src="images/sekul1_11zon.webp" alt="Lingkungan sekolah" class="img-fluid shadow" loading="lazy">
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="fw-bold text-maroon mb-3">Lingkungan Belajar yang Aktif dan Adaptif</h2>
+                    <p class="text-muted">Kami percaya hasil belajar terbaik muncul dari lingkungan yang aman, suportif, dan memberi ruang bagi siswa untuk bertanya, mencoba, dan berkembang sesuai ritmenya. Karena itu, kegiatan akademik kami dirancang tidak monoton dan selalu memberi kesempatan pada siswa untuk aktif terlibat.</p>
+                    <p class="text-muted mb-0">Melalui kombinasi pengajaran terstruktur, praktik langsung, dan evaluasi berkelanjutan, siswa didorong untuk tumbuh menjadi pribadi yang percaya diri, bertanggung jawab, dan siap melanjutkan pendidikan ke tahap berikutnya.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-maroon text-center">
+        <div class="container">
+            <h2 class="fw-bold mb-3">Siap Mengembangkan Potensi Anak Bersama Kami?</h2>
+            <p class="mb-4 text-light">Program akademik kami dirancang untuk menyeimbangkan prestasi, karakter, dan keterampilan masa depan.</p>
+            <a href="hubungi.html" class="btn btn-light text-maroon btn-lg rounded-pill px-5 fw-bold shadow">Hubungi Kami Sekarang</a>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white pt-5 pb-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4 text-center text-md-start">
+                    <h4 class="text-white fw-bold mb-3 footer-brand">Sekolah<span class="text-maroon">Ku</span></h4>
+                    <p class="footer-text mb-0">Berdedikasi untuk menciptakan lingkungan belajar yang inspiratif, inklusif, dan berorientasi pada masa depan bagi setiap anak.</p>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4 text-center">
+                    <h5 class="text-white fw-bold mb-3">Tautan Cepat</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li><a href="about.html" class="footer-link d-inline-block mb-2">Tentang Kami</a></li>
+                        <li><a href="akademik.html" class="footer-link d-inline-block mb-2">Akademik & Kurikulum</a></li>
+                        <li><a href="kegiatan.html" class="footer-link d-inline-block mb-2">Galeri Kegiatan</a></li>
+                        <li><a href="blog.html" class="footer-link d-inline-block">Blog & Berita</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-4 col-md-12 mb-4 text-center text-md-start">
+                    <h5 class="text-white fw-bold mb-3">Hubungi Kami</h5>
+                    <div class="d-inline-block text-start">
+                        <ul class="list-unstyled footer-contact mb-3">
+                            <li class="mb-2"><i class="fas fa-map-marker-alt text-center me-2" style="width: 20px;"></i> Jl. Pendidikan No. 123, Jakarta</li>
+                            <li class="mb-2"><i class="fas fa-phone-alt text-center me-2" style="width: 20px;"></i> (0341) 555-1234</li>
+                            <li><i class="fas fa-envelope text-center me-2" style="width: 20px;"></i> info@sekolahku.sch.id</li>
+                        </ul>
+                    </div>
+                    <div class="footer-social mt-3 d-flex justify-content-center justify-content-md-start gap-3">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="border-secondary mt-4">
+            <div class="text-center footer-text small">&copy; 2026 SekolahKu. All Rights Reserved.</div>
+        </div>
+    </footer>
+
+    <div class="floating-container">
+        <button onclick="scrollToTop()" class="float-btn top-btn" id="btnScrollTop" title="Ke Atas"><i class="fas fa-chevron-up"></i></button>
+        <a href="https://wa.me/6281234567890" target="_blank" class="float-btn wa-btn" title="Hubungi WhatsApp"><i class="fab fa-whatsapp"></i></a>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script>
+        let topBtn = document.getElementById("btnScrollTop");
+        window.onscroll = function() {
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                topBtn.style.display = "flex";
+            } else {
+                topBtn.style.display = "none";
+            }
+        };
+        function scrollToTop() { window.scrollTo({ top: 0, behavior: 'smooth' }); }
+    </script>
+</body>
+</html>

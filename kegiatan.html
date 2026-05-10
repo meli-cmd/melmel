@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Galeri Kegiatan | SekolahKu</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        html, body { overflow-x: hidden; width: 100%; font-family: 'Poppins', sans-serif; margin: 0; padding: 0; }
+        :root { --maroon: #800000; --maroon-light: #a52a2a; --maroon-dark: #4d0000; }
+        .text-maroon { color: var(--maroon) !important; }
+        .bg-maroon { background-color: var(--maroon) !important; color: white; }
+        .btn-maroon { background-color: var(--maroon); color: white; border: none; transition: all 0.3s ease; }
+        .btn-maroon:hover { background-color: var(--maroon-dark); color: white; }
+        
+        .navbar { box-shadow: 0 2px 10px rgba(0,0,0,0.1); padding: 0.85rem 0; }
+        .navbar-brand { font-size: 2rem !important; line-height: 1; letter-spacing: -0.03em; }
+        .nav-link { font-weight: 600; color: #333; font-size: 1.1rem; padding: 0.5rem 0.95rem !important; transition: color 0.3s; }
+        .nav-link:hover, .nav-link.active { color: var(--maroon) !important; }
+        .navbar .btn-maroon { min-width: 210px; padding: 0.9rem 1.8rem; text-align: center; }
+        
+        /* Gallery Styling */
+        .gallery-item { border-radius: 15px; overflow: hidden; position: relative; cursor: pointer; }
+        .gallery-item img { width: 100%; height: 250px; object-fit: cover; transition: transform 0.4s ease; }
+        .gallery-item:hover img { transform: scale(1.1); }
+        .gallery-overlay { position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(to top, rgba(128,0,0,0.9), transparent); overflow: hidden; width: 100%; height: 100%; opacity: 0; transition: .4s ease; display: flex; align-items: flex-end; padding: 20px; }
+        .gallery-item:hover .gallery-overlay { opacity: 1; }
+        
+        /* Floating Buttons */
+        .floating-container { position: fixed; bottom: 20px; right: 20px; display: flex; flex-direction: column; gap: 15px; z-index: 1000; }
+        .float-btn { width: 55px; height: 55px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 24px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); transition: all 0.3s; text-decoration: none; cursor: pointer; }
+        .float-btn:hover { transform: scale(1.1); color: white; }
+        .wa-btn { background-color: #25D366; }
+        .top-btn { background-color: var(--maroon); display: none; border: none; }
+        
+        .section-padding { padding: 80px 0; }
+        .timeline-card { background: #fff; border-radius: 18px; box-shadow: 0 8px 24px rgba(0,0,0,0.08); padding: 1.75rem; height: 100%; }
+        .highlight-card { border: none; border-radius: 18px; box-shadow: 0 8px 24px rgba(0,0,0,0.08); overflow: hidden; height: 100%; }
+        .highlight-card img { width: 100%; height: 220px; object-fit: cover; }
+        .page-header { background: linear-gradient(to right, #fff5f5, #ffffff); }
+        .footer-brand { font-size: 2rem; line-height: 1.1; }
+        .footer-text { color: rgba(255,255,255,0.72); }
+        .footer-link { color: rgba(255,255,255,0.72); text-decoration: none; transition: color 0.3s ease, transform 0.3s ease; }
+        .footer-link:hover { color: #ffffff; transform: translateX(3px); }
+        .footer-contact li, .footer-social a { color: rgba(255,255,255,0.72); }
+        .footer-social a { font-size: 1.15rem; margin-right: 1rem; transition: color 0.3s ease, transform 0.3s ease; }
+        .footer-social a:hover { color: #ffffff; transform: translateY(-2px); }
+        
+        @media (max-width: 767.98px) {
+            .footer-social a { margin-right: 0; }
+            .footer-link:hover { transform: none; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+        <div class="container">
+            <a class="navbar-brand text-maroon fw-bold fs-3" href="index.html">Sekolah<span class="text-dark">Ku</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">Tentang Kami</a></li>
+                    <li class="nav-item"><a class="nav-link" href="akademik.html">Akademik</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="kegiatan.html">Kegiatan</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="hubungi.html">Hubungi Kami</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="py-5 page-header text-center">
+        <div class="container">
+            <h1 class="display-5 fw-bold text-maroon">Galeri & Kegiatan</h1>
+            <p class="lead text-muted">Momen keseruan, prestasi, dan aktivitas luar kelas siswa-siswi kami.</p>
+        </div>
+    </section>
+
+    <section class="section-padding bg-white">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="gallery-item">
+                        <img src="images/pramuka_11zon.webp" alt="Kegiatan Pramuka" loading="lazy">
+                        <div class="gallery-overlay">
+                            <h5 class="text-white">Kegiatan Pramuka</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="gallery-item">
+                        <img src="images/senitari_11zon.webp" alt="Latihan Musik dan seni" loading="lazy">
+                        <div class="gallery-overlay">
+                            <h5 class="text-white">Latihan Musik</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="gallery-item">
+                        <img src="images/olaharagapagi_11zon.webp" alt="Laboratorium Sains" loading="lazy">
+                        <div class="gallery-overlay">
+                            <h5 class="text-white">Laboratorium Sains</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="gallery-item">
+                        <img src="images/belajardiluar_11zon.webp" alt="Kegiatan kunjungan dan aktivitas luar kelas" loading="lazy">
+                        <div class="gallery-overlay">
+                            <h5 class="text-white">Field Trip & Study Tour</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="gallery-item">
+                        <img src="images/upacara1_11zon.webp" alt="Kegiatan resmi sekolah" loading="lazy">
+                        <div class="gallery-overlay">
+                            <h5 class="text-white">Upacara Hari Kemerdekaan</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="gallery-item">
+                        <img src="images/lapanganbasket_11zon.webp" alt="Praktik laboratorium sains" loading="lazy">
+                        <div class="gallery-overlay">
+                            <h5 class="text-white">Praktek Laboratorium Sains</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="text-maroon fw-bold">Program Kegiatan Siswa</h2>
+                <p class="text-muted">Setiap kegiatan dirancang untuk mengembangkan keberanian, kerja sama, kreativitas, dan tanggung jawab siswa.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="timeline-card">
+                        <h4 class="fw-bold text-maroon mb-3">Ekstrakurikuler Rutin</h4>
+                        <p class="text-muted mb-3">Siswa dapat memilih kegiatan sesuai minat seperti pramuka, futsal, seni tari, klub bahasa Inggris, hingga eksperimen sains.</p>
+                        <ul class="list-unstyled text-muted mb-0">
+                            <li class="mb-2"><i class="fas fa-check-circle text-maroon me-2"></i> Jadwal mingguan teratur</li>
+                            <li class="mb-2"><i class="fas fa-check-circle text-maroon me-2"></i> Pendampingan guru pembina</li>
+                            <li><i class="fas fa-check-circle text-maroon me-2"></i> Evaluasi perkembangan siswa</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="timeline-card">
+                        <h4 class="fw-bold text-maroon mb-3">Kegiatan Tematik</h4>
+                        <p class="text-muted mb-3">Kami rutin menghadirkan kegiatan khusus seperti peringatan hari besar, pekan literasi, festival seni, dan class meeting.</p>
+                        <ul class="list-unstyled text-muted mb-0">
+                            <li class="mb-2"><i class="fas fa-star text-maroon me-2"></i> Menumbuhkan percaya diri</li>
+                            <li class="mb-2"><i class="fas fa-star text-maroon me-2"></i> Memperkuat kerja tim</li>
+                            <li><i class="fas fa-star text-maroon me-2"></i> Mengembangkan kreativitas</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="timeline-card">
+                        <h4 class="fw-bold text-maroon mb-3">Kegiatan Luar Kelas</h4>
+                        <p class="text-muted mb-3">Field trip, kunjungan edukatif, dan pembelajaran berbasis pengalaman menjadi bagian penting untuk memperluas wawasan siswa.</p>
+                        <ul class="list-unstyled text-muted mb-0">
+                            <li class="mb-2"><i class="fas fa-map-marker-alt text-maroon me-2"></i> Kunjungan edukatif</li>
+                            <li class="mb-2"><i class="fas fa-map-marker-alt text-maroon me-2"></i> Project di lapangan</li>
+                            <li><i class="fas fa-map-marker-alt text-maroon me-2"></i> Penguatan keterampilan sosial</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding bg-white">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="text-maroon fw-bold">Sorotan Kegiatan Favorit</h2>
+                <p class="text-muted">Bukan hanya dokumentasi, tetapi gambaran nyata bagaimana siswa belajar aktif di luar kelas.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="highlight-card">
+                        <img src="images/futsal_11zon.webp" alt="Kompetisi futsal siswa" loading="lazy">
+                        <div class="p-4">
+                            <h5 class="fw-bold text-maroon">Liga Futsal Pelajar</h5>
+                            <p class="text-muted small mb-0">Ajang olahraga yang melatih sportivitas, strategi bermain, dan kekompakan tim sejak dini.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="highlight-card">
+                        <img src="images/ekstrakulikuler_11zon.webp" alt="Kegiatan seni siswa" loading="lazy">
+                        <div class="p-4">
+                            <h5 class="fw-bold text-maroon">Pekan Kreativitas Seni</h5>
+                            <p class="text-muted small mb-0">Siswa diberi ruang untuk mengekspresikan diri melalui karya visual, pertunjukan, dan kolaborasi kelas.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="highlight-card">
+                        <img src="images/siswa2_11zon.webp" alt="Kegiatan sains siswa" loading="lazy">
+                        <div class="p-4">
+                            <h5 class="fw-bold text-maroon">Eksplorasi Sains</h5>
+                            <p class="text-muted small mb-0">Aktivitas laboratorium dan eksperimen sederhana yang membuat sains terasa dekat, seru, dan mudah dipahami.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-maroon text-center">
+        <div class="container">
+            <h2 class="fw-bold mb-3">Banyak Pengalaman Berharga Menanti</h2>
+            <p class="mb-4 text-light">Kami menghadirkan kegiatan yang membantu siswa bertumbuh aktif, percaya diri, dan siap berkolaborasi.</p>
+            <a href="hubungi.html" class="btn btn-light text-maroon btn-lg rounded-pill px-5 fw-bold shadow">Hubungi Kami Sekarang</a>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white pt-5 pb-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4 text-center text-md-start">
+                    <h4 class="text-white fw-bold mb-3 footer-brand">Sekolah<span class="text-maroon">Ku</span></h4>
+                    <p class="footer-text mb-0">Berdedikasi untuk menciptakan lingkungan belajar yang inspiratif, inklusif, dan berorientasi pada masa depan bagi setiap anak.</p>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4 text-center">
+                    <h5 class="text-white fw-bold mb-3">Tautan Cepat</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li><a href="about.html" class="footer-link d-inline-block mb-2">Tentang Kami</a></li>
+                        <li><a href="akademik.html" class="footer-link d-inline-block mb-2">Akademik & Kurikulum</a></li>
+                        <li><a href="kegiatan.html" class="footer-link d-inline-block mb-2">Galeri Kegiatan</a></li>
+                        <li><a href="blog.html" class="footer-link d-inline-block">Blog & Berita</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-4 col-md-12 mb-4 text-center text-md-start">
+                    <h5 class="text-white fw-bold mb-3">Hubungi Kami</h5>
+                    <div class="d-inline-block text-start">
+                        <ul class="list-unstyled footer-contact mb-3">
+                            <li class="mb-2"><i class="fas fa-map-marker-alt text-center me-2" style="width: 20px;"></i> Jl. Pendidikan No. 123, Jakarta</li>
+                            <li class="mb-2"><i class="fas fa-phone-alt text-center me-2" style="width: 20px;"></i> +62 812 3456 7890</li>
+                            <li><i class="fas fa-envelope text-center me-2" style="width: 20px;"></i> info@sekolahku.sch.id</li>
+                        </ul>
+                    </div>
+                    <div class="footer-social mt-3 d-flex justify-content-center justify-content-md-start gap-3">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="border-secondary mt-4">
+            <div class="text-center footer-text small">&copy; 2026 SekolahKu. All Rights Reserved.</div>
+        </div>
+    </footer>
+
+    <div class="floating-container">
+        <button onclick="scrollToTop()" class="float-btn top-btn" id="btnScrollTop" title="Ke Atas"><i class="fas fa-chevron-up"></i></button>
+        <a href="https://wa.me/6281234567890" target="_blank" class="float-btn wa-btn" title="Hubungi WhatsApp"><i class="fab fa-whatsapp"></i></a>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script>
+        let topBtn = document.getElementById("btnScrollTop");
+        window.onscroll = function() {
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                topBtn.style.display = "flex";
+            } else {
+                topBtn.style.display = "none";
+            }
+        };
+        function scrollToTop() { window.scrollTo({ top: 0, behavior: 'smooth' }); }
+    </script>
+</body>
+</html>

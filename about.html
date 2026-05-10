@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+    <title>Tentang Kami | Sekolah Modern Berprestasi</title>
+    <meta name="description" content="Pelajari sejarah, visi, dan misi SekolahKu. Kami berdedikasi untuk menciptakan lingkungan belajar yang inovatif, aman, dan berpusat pada siswa.">
+    <meta name="keywords" content="profil sekolah, visi misi sekolah, sejarah sekolah, tentang kami sekolah">
+    <meta name="author" content="SekolahKu">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#800000">
+    <link rel="canonical" href="https://www.domainanda.com/about.html">
+    
+    <meta property="og:title" content="Tentang Kami | Sekolah Modern Berprestasi">
+    <meta property="og:description" content="Membangun karakter dan prestasi. Kenali lebih dekat visi dan misi SekolahKu.">
+    <meta property="og:image" content="assets/images/about-og.webp">
+    <meta property="og:url" content="https://www.domainanda.com/about.html">
+    <meta property="og:site_name" content="SekolahKu">
+    <meta property="og:locale" content="id_ID">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Tentang Kami | Sekolah Modern Berprestasi">
+    <meta name="twitter:description" content="Kenali lebih dekat sejarah, visi, misi, dan nilai-nilai utama SekolahKu.">
+    <meta name="twitter:image" content="assets/images/about-og.webp">
+
+    <link rel="icon" type="image/webp" href="assets/images/favicon.webp">
+    <link rel="shortcut icon" href="assets/images/favicon.webp">
+    <link rel="apple-touch-icon" href="assets/images/favicon.webp">
+
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AboutPage",
+      "mainEntity": {
+        "@type": "EducationalOrganization",
+        "name": "SekolahKu",
+        "description": "Lembaga pendidikan yang berfokus pada pengembangan akademik dan karakter anak."
+      }
+    }
+    </script>
+
+    <style>
+        html, body { overflow-x: hidden; width: 100%; margin: 0; padding: 0; font-family: 'Poppins', sans-serif; }
+        :root { --maroon: #800000; --maroon-light: #A52A2A; --maroon-dark: #4A0000; }
+        .bg-maroon { background-color: var(--maroon) !important; color: white; }
+        .text-maroon { color: var(--maroon) !important; }
+        .btn-maroon { background-color: var(--maroon); color: white; border-radius: 25px; padding: 10px 24px; font-weight: 600; border: 2px solid var(--maroon); transition: all 0.3s ease; }
+        .btn-maroon:hover { background-color: white; color: var(--maroon); }
+        .navbar { box-shadow: 0 2px 10px rgba(0,0,0,0.1); padding: 0.85rem 0; }
+        .navbar-brand { font-size: 2rem !important; line-height: 1; letter-spacing: -0.03em; }
+        .nav-link { font-weight: 600; color: #333; font-size: 1.1rem; padding: 0.5rem 0.95rem !important; transition: color 0.3s;}
+        .nav-link:hover, .nav-link.active { color: var(--maroon) !important; }
+        .navbar .btn-maroon { min-width: 210px; padding: 0.9rem 1.8rem; text-align: center; }
+        
+        .floating-container { position: fixed; bottom: 20px; right: 20px; display: flex; flex-direction: column; gap: 15px; z-index: 9999; }
+        .float-btn { width: 55px; height: 55px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 24px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); transition: all 0.3s ease; text-decoration: none; border: none;}
+        .float-btn:hover { transform: translateY(-5px); color: white; }
+        .wa-btn { background-color: #25D366; }
+        .top-btn { background-color: var(--maroon); opacity: 0; visibility: hidden; cursor: pointer; }
+        .top-btn.show { opacity: 1; visibility: visible; }
+        
+        /* Gambar */
+        .img-webp { width: 100%; aspect-ratio: 4/3; max-height: 380px; object-fit: cover; border-radius: 12px; }
+        
+        /* --- REVISI: Typografi & Deskripsi Menggunakan REM --- */
+        .page-title { font-size: clamp(2.2rem, 5vw, 3.2rem); letter-spacing: -0.03em; }
+        .page-desc { font-size: 1.15rem; font-weight: 300; line-height: 1.6; }
+        .section-title { font-size: clamp(1.75rem, 3vw, 2.25rem); letter-spacing: -0.02em; }
+        
+        .desc-text {
+            font-size: 1rem; /* 16px */
+            line-height: 1.7;
+        }
+        .desc-list {
+            font-size: 1rem;
+        }
+        .desc-list li {
+            margin-bottom: 0.875rem !important;
+            display: flex;
+            align-items: center;
+        }
+        .desc-list i {
+            font-size: 1.15rem;
+        }
+        
+        .value-card { border: none; border-radius: 18px; box-shadow: 0 8px 24px rgba(0,0,0,0.08); padding: 2rem; height: 100%; }
+        .value-card h3 { font-size: 1.35rem; }
+        .value-card h4 { font-size: 1.25rem; }
+        
+        .page-header { background: linear-gradient(to right, #fff5f5, #ffffff); }
+        .footer-brand { font-size: 2rem; line-height: 1.1; }
+        .footer-text { color: rgba(255,255,255,0.72); font-size: 1rem; line-height: 1.7; }
+        .footer-link { color: rgba(255,255,255,0.72); text-decoration: none; transition: color 0.3s ease, transform 0.3s ease; font-size: 1rem; line-height: 1.7;}
+        .footer-link:hover { color: #ffffff; transform: translateX(3px); }
+        .footer-contact li, .footer-social a { color: rgba(255,255,255,0.72); font-size: 1rem; line-height: 1.7; }
+        .footer-social a { font-size: 1.15rem; margin-right: 1rem; transition: color 0.3s ease, transform 0.3s ease; }
+        .footer-social a:hover { color: #ffffff; transform: translateY(-2px); }
+        
+        @media (max-width: 767.98px) {
+            .footer-social a { margin-right: 0; }
+            .footer-link:hover { transform: none; }
+        }
+        @media (max-width: 575.98px) {
+            .page-desc { font-size: 1rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+        <div class="container">
+            <a class="navbar-brand text-maroon fw-bold fs-3" href="index.html">Sekolah<span class="text-dark">Ku</span></a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="about.html">Tentang Kami</a></li>
+                    <li class="nav-item"><a class="nav-link" href="akademik.html">Akademik</a></li>
+                    <li class="nav-item"><a class="nav-link" href="kegiatan.html">Kegiatan</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="hubungi.html">Hubungi Kami</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="py-5 page-header text-center">
+            <div class="container pt-4 pb-2">
+                <h1 class="page-title fw-bold text-maroon mb-3">Tentang Kami</h1>
+                <p class="page-desc text-muted">Mengenal lebih dekat visi, misi, dan nilai-nilai yang kami bangun.</p>
+            </div>
+        </section>
+
+        <section class="py-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 mb-4 mb-lg-0">
+                        <img src="images/literasi_11zon.webp" alt="Anak membaca buku di perpustakaan" class="img-webp shadow" loading="lazy">
+                    </div>
+                    <div class="col-lg-6 ps-lg-5">
+                        <h2 class="section-title fw-bold text-dark mb-3">Membangun Generasi Emas</h2>
+                        <p class="text-muted desc-text">Didirikan sejak tahun 2010, SekolahKu telah berkomitmen untuk memberikan pendidikan berkualitas tinggi. Kami percaya bahwa setiap anak memiliki potensi unik yang harus dikembangkan melalui pendekatan pembelajaran yang holistik dan modern.</p>
+                        <ul class="list-unstyled mt-4 text-muted desc-list">
+                            <li><i class="fas fa-check-circle text-maroon me-3"></i> Kurikulum Nasional Plus</li>
+                            <li><i class="fas fa-check-circle text-maroon me-3"></i> Tenaga Pengajar Tersertifikasi</li>
+                            <li><i class="fas fa-check-circle text-maroon me-3"></i> Lingkungan Belajar Inklusif</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5 bg-light">
+            <div class="container text-center">
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="card h-100 border-0 shadow-sm p-4 value-card">
+                            <i class="fas fa-eye fa-3x text-maroon mb-4"></i>
+                            <h3 class="fw-bold text-dark mb-3">Visi</h3>
+                            <p class="text-muted desc-text mb-0">Menjadi institusi pendidikan terkemuka yang mencetak pemimpin masa depan yang berakhlak mulia, cerdas, dan inovatif di era global.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card h-100 border-0 shadow-sm p-4 value-card">
+                            <i class="fas fa-bullseye fa-3x text-maroon mb-4"></i>
+                            <h3 class="fw-bold text-dark mb-3">Misi</h3>
+                            <p class="text-muted desc-text mb-0">Menyelenggarakan pendidikan berkualitas, memfasilitasi pengembangan minat dan bakat, serta menanamkan nilai-nilai karakter bangsa.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5 bg-white">
+            <div class="container">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-6 order-2 order-lg-1 pe-lg-5">
+                        <h2 class="section-title fw-bold text-maroon mb-3">Perjalanan dan Komitmen Kami</h2>
+                        <p class="text-muted desc-text mb-3">Sejak awal berdiri, SekolahKu dibangun dengan keyakinan bahwa pendidikan yang baik harus membentuk pengetahuan, sikap, dan keterampilan secara seimbang. Kami terus berinvestasi pada kualitas guru, suasana belajar, serta kegiatan siswa agar setiap anak merasa aman untuk tumbuh dan berkembang.</p>
+                        <p class="text-muted desc-text mb-0">Dengan dukungan orang tua dan tim pengajar yang berdedikasi, kami berusaha menciptakan lingkungan belajar yang hangat namun tetap disiplin, modern namun tetap menanamkan nilai, dan progresif tanpa meninggalkan karakter.</p>
+                    </div>
+                    <div class="col-lg-6 order-1 order-lg-2">
+                        <img src="images/siswa1_11zon.webp" alt="Suasana kolaborasi siswa di sekolah" class="img-webp shadow" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5 bg-light">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="section-title fw-bold text-maroon mb-2">Nilai yang Kami Hidupkan</h2>
+                    <p class="text-muted page-desc">Prinsip-prinsip ini menjadi dasar dalam setiap proses belajar dan interaksi di sekolah.</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="value-card bg-white">
+                            <h4 class="fw-bold text-maroon mb-3">Karakter</h4>
+                            <p class="text-muted desc-text mb-0">Kami menanamkan kejujuran, tanggung jawab, empati, dan disiplin sebagai bagian dari keseharian siswa di dalam maupun di luar kelas.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="value-card bg-white">
+                            <h4 class="fw-bold text-maroon mb-3">Prestasi</h4>
+                            <p class="text-muted desc-text mb-0">Setiap siswa didorong untuk mencapai potensi terbaiknya melalui pembelajaran aktif, pendampingan guru, dan evaluasi yang terarah.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="value-card bg-white">
+                            <h4 class="fw-bold text-maroon mb-3">Kolaborasi</h4>
+                            <p class="text-muted desc-text mb-0">Kami percaya pertumbuhan siswa akan lebih kuat jika sekolah, guru, dan orang tua berjalan bersama dalam satu visi pendidikan.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <section class="py-5 bg-maroon text-center">
+        <div class="container">
+            <h2 class="section-title fw-bold mb-3 text-white">Siap Mengukir Prestasi Bersama Kami?</h2>
+            <p class="mb-4 text-light page-desc">Jangan lewatkan kesempatan emas ini. Kuota pendaftaran terbatas!</p>
+            <a href="hubungi.html" class="btn btn-light text-maroon btn-lg rounded-pill px-5 fw-bold shadow">Hubungi Kami Sekarang</a>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-light pt-5 pb-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4 text-center text-md-start">
+                    <h4 class="text-white fw-bold mb-3 footer-brand">Sekolah<span class="text-maroon">Ku</span></h4>
+                    <p class="footer-text mb-0">Berdedikasi untuk menciptakan lingkungan belajar yang inspiratif, inklusif, dan berorientasi pada masa depan bagi setiap anak.</p>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4 text-center">
+                    <h5 class="text-white fw-bold mb-3">Tautan Cepat</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li><a href="about.html" class="footer-link d-inline-block mb-2">Tentang Kami</a></li>
+                        <li><a href="akademik.html" class="footer-link d-inline-block mb-2">Akademik & Kurikulum</a></li>
+                        <li><a href="kegiatan.html" class="footer-link d-inline-block mb-2">Galeri Kegiatan</a></li>
+                        <li><a href="blog.html" class="footer-link d-inline-block">Blog & Berita</a></li>
+                    </ul>
+                </div>
+                
+                <div id="kontak" class="col-lg-4 col-md-12 mb-4 text-center text-md-start">
+                    <h5 class="text-white fw-bold mb-3">Hubungi Kami</h5>
+                    <div class="d-inline-block text-start">
+                        <ul class="list-unstyled footer-contact mb-3">
+                            <li class="mb-2 d-flex align-items-center"><i class="fas fa-map-marker-alt text-center me-3" style="width: 20px;"></i> Jl. Pendidikan No. 123, Jakarta</li>
+                            <li class="mb-2 d-flex align-items-center"><i class="fas fa-phone-alt text-center me-3" style="width: 20px;"></i> +62 812 3456 7890</li>
+                            <li class="mb-2 d-flex align-items-center"><i class="fas fa-envelope text-center me-3" style="width: 20px;"></i> info@sekolahku.sch.id</li>
+                        </ul>
+                    </div>
+                    <div class="footer-social mt-3 d-flex justify-content-center justify-content-md-start gap-3">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="border-secondary mt-4">
+            <div class="text-center footer-text small">&copy; 2026 SekolahKu. All Rights Reserved.</div>
+        </div>
+    </footer>
+
+    <div class="floating-container">
+        <button id="backToTop" class="float-btn top-btn" title="Kembali ke Atas"><i class="fas fa-chevron-up"></i></button>
+        <a href="https://wa.me/6281234567890" target="_blank" class="float-btn wa-btn" title="Hubungi via WhatsApp"><i class="fab fa-whatsapp"></i></a>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const topBtn = document.getElementById("backToTop");
+            window.addEventListener("scroll", function() {
+                if (window.scrollY > 200) { topBtn.classList.add("show"); } else { topBtn.classList.remove("show"); }
+            });
+            topBtn.addEventListener("click", function(e) {
+                e.preventDefault();
+                window.scrollTo({ top: 0, behavior: "smooth" });
+            });
+        });
+    </script>
+</body>
+</html>
